@@ -1,0 +1,115 @@
+/* ==============================
+   Header Section Styling
+   ============================== */
+
+/* Import base color palette */
+@import url('colors.css');
+
+header {
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--base-color--);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  z-index: 102;
+}
+a{
+    text-decoration: none;
+}
+.logo span {
+    margin-top: 20px;
+    color: var(--logo-color--);
+}
+
+.logo i {
+  color: var(--logo-color--);
+}
+h2 {
+    color: var(--heading-h2--);
+}
+/* Navigation Menu */
+/* ==============================
+   Navigation Menu Styling
+   ============================== */
+
+.menu {
+  padding: 20px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu nav ul li {
+  display: inline-block;
+}
+
+.menu nav ul li a {
+  text-decoration: none;
+  color: var(--heading-h1--);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover underline animation */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: var(--logo-color--);
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: var(--logo-color--);
+}
+
+
+/* Search & Cart Icons */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icons i {
+  font-size: 18px;
+  color: var(--heading-h1--);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.header-icons i:hover {
+  color: var(--logo-color--);
+}
+

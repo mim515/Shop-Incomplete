@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/launching.css">
+    <link rel="stylesheet" href="css/theme-color.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/product.css">
+
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <button id="theme-switch">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+    </button>
+    <header>
+        <div class="logo-class">
+            <h2 class="logo"> <i class="fa-regular fa-circle"></i> SHOP <span>IN</span></h2>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="landing.html">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="launching.html">Launching</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html">Coming soon</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="product-container">
+        <div class="product">
+            <div class="product-gallery">
+                <img src="images/product-img/image1.png" id="productImg">
+                <div class="controls">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1>Water Bottle</h1>
+                <h2>$12.00</h2>
+                <h3>30% OFF</h3>
+                <p>It is a portable container, typically made of plastic, glass, or metal, designed to hold, store, and
+                    carry drinking water conveniently.</p>
+                <form>
+                    <div class="size-select">
+                        <p>Size</p>
+                        <label for="small">
+                            <input type="radio" name="size" id="small">
+                            <span>S</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" name="size" id="medium">
+                            <span>M</span>
+                        </label>
+                        <label for="large">
+                            <input type="radio" name="size" id="large">
+                            <span>L</span>
+                        </label>
+                        <label for="x-large">
+                            <input type="radio" name="size" id="x-large">
+                            <span>XL</span>
+                        </label>
+                        <label for="xx-large">
+                            <input type="radio" name="size" id="xx-large">
+                            <span>XXL</span>
+                        </label>
+                    </div>
+                    <div class="color-select">
+                        <p>Color</p>
+                        <label for="red">
+                            <input type="radio" name="color" id="red">
+                            <span class="color-1"></span>
+                        </label>
+                        <label for="green">
+                            <input type="radio" name="color" id="green">
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="orange">
+                            <input type="radio" name="color" id="orange">
+                            <span class="color-3"></span>
+                        </label>
+                        <label for="blue">
+                            <input type="radio" name="color" id="blue">
+                            <span class="color-4"></span>
+                        </label>
+                    </div>
+                    <div class="quantity-select">
+                        <p>Quantity</p>
+                        <input type="number" value="1">
+                    </div>
+                    <button>Buy now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="darkmode.js"></script>
+    <script src="js/launching.js"></script>
+</body>
+
+</html>

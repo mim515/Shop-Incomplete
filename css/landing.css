@@ -1,0 +1,148 @@
+/* ==============================
+   Main Page Styling (Without Header)
+   ============================== */
+
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+/* Base setup */
+body {
+  background: var(--base-color--);
+  color: var(--heading-h2--);
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px 0 80px;
+  flex-wrap: wrap;
+}
+
+.text {
+  max-width: 600px;
+}
+
+.text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 90px;
+  line-height: 85px;
+  color: var(--heading-h1--);
+  text-transform: uppercase;
+}
+
+.text h1 span {
+  color: var(--logo-color--);
+}
+
+.tagline {
+  font-size: 18px;
+  margin-top: 25px;
+  letter-spacing: 2px;
+  color: var(--heading-h1--);
+}
+
+.description {
+  font-size: 15px;
+  margin: 15px 0 30px;
+  color: var(--para-color--);
+  line-height: 1.6;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: var(--button--color--);
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  box-shadow: var(--button-box-shadow--);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--dark-shadow--);
+}
+
+/* Image Section */
+
+.image-box{
+  position: relative;
+  max-width: 800px;
+}
+.image-box .girl {
+  height: 897px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.model {
+  width: 420px;
+  border-radius: 10px;
+  box-shadow: var(--dark-shadow--);
+}
+
+/* Product Card */
+.product-card {
+  position: absolute;
+  bottom: 0;
+  right: -120px;
+  width: 280px;
+  background: var(--secondary-base--);
+  border: var(--border-color--);
+  border-radius: 16px;
+  box-shadow: var(--dark-shadow--);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card img {
+  width: 180px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-card h4 {
+  font-size: 16px;
+  color: var(--heading-h2--);
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  color: var(--logo-color--);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.product-card small {
+  color: var(--para-color--);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .text h1 {
+    font-size: 65px;
+    line-height: 70px;
+  }
+
+  .product-card {
+    position: static;
+    margin-top: 25px;
+  }
+}
